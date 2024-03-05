@@ -1,0 +1,127 @@
+{
+  "code": "hangingbasket",
+  "class": "BlockGenericTypedContainer",
+  "entityclass": "GenericTypedContainer",
+  "attributes": {
+    "inventoryClassName": "hangingbasket",
+    "defaultType": "reed",
+    "openSound": "game:sounds/block/basketopen",
+    "closeSound": "game:sounds/block/basketclose",
+    "types": ["reed"],
+    "drop": {
+      "reed": true
+    },
+    "quantitySlots": {
+      "reed": 8
+    },
+    "dialogTitleLangCode": {
+      "reed": "basketcontents"
+    },
+    "storageType": {
+      "reed": 189
+    },
+    "retrieveOnly": {
+      "reed": false
+    },
+    "shape": {
+      "reed": "block/hangingbasket-normal"
+    },
+    "variantByGroup": "side",
+    "variantByGroupInventory": null
+  },
+  "behaviors": [
+    { "name": "Lockable" },
+    { "name": "Container" },
+    {
+      "name": "HorizontalOrientable",
+      "properties": { "dropBlockFace": "east" }
+    }
+  ],
+  "entityBehaviors": [{ "name": "Animatable" }],
+  "variantgroups": [
+    { "code": "side", "loadFromProperties": "abstract/horizontalorientation" }
+  ],
+  "creativeinventory": {},
+  "creativeinventoryStacksByType": {
+    "*-east": [
+      {
+        "tabs": ["general", "decorative"],
+        "stacks": [
+          {
+            "type": "block",
+            "code": "hangingbasket-east",
+            "attributes": { "type": "reed" }
+          }
+        ]
+      }
+    ]
+  },
+  "heldTpIdleAnimation": "holdunderarm",
+  "shapeInventory": { "base": "block/hangingbasket-normal", "rotateY": 270 },
+  "shapeByType": {
+    "*-north": { "base": "block/hangingbasket-normal", "rotateY": 0 },
+    "*-east": { "base": "block/hangingbasket-normal", "rotateY": 270 },
+    "*-west": { "base": "block/hangingbasket-normal", "rotateY": 90 },
+    "*-south": { "base": "block/hangingbasket-normal", "rotateY": 180 }
+  },
+
+  "_comment": "Must declare textures so they get added to the block texture atlas",
+  "textures": {
+    "reed-sidesWE": { "base": "game:block/reed/basket/normal-westeast" },
+    "reed-sidesSN": { "base": "game:block/reed/basket/normal-northsouth" },
+    "reed-lid": { "base": "game:block/reed/basket/normal-lid" }
+  },
+  "blockmaterial": "Wood",
+  "replaceable": 900,
+  "resistance": 2,
+  "lightAbsorption": 0,
+  "sideAo": { "all": false },
+  "sidesolid": {
+    "all": false
+  },
+  "sideopaque": {
+    "all": false
+  },
+  "collisionbox": {
+    "x1": 0.125,
+    "y1": 0,
+    "z1": 0.125,
+    "x2": 0.8125,
+    "y2": 0.5,
+    "z2": 0.875,
+    "rotateYByType": {
+      "*-north": 270,
+      "*-east": 180,
+      "*-south": 90,
+      "*-west": 0
+    }
+  },
+  "selectionbox": {
+    "x1": 0.125,
+    "y1": 0,
+    "z1": 0.125,
+    "x2": 0.8125,
+    "y2": 0.5,
+    "z2": 0.875,
+    "rotateYByType": {
+      "*-north": 270,
+      "*-east": 180,
+      "*-south": 90,
+      "*-west": 0
+    }
+  },
+  "sounds": {
+    "place": "game:block/planks",
+    "walk": "game:walk/wood"
+  },
+  "materialDensity": 600,
+  "tpHandTransform": {
+    "translation": { "x": -0.9, "y": -0.5, "z": -0.3 },
+    "rotation": { "x": 0, "y": 90, "z": -102 },
+    "scale": 0.56
+  },
+  "guiTransform": {
+    "origin": { "x": 0.5, "y": 0.3, "z": 0.5 },
+    "scale": 1.3
+  }
+}
