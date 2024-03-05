@@ -35,9 +35,9 @@
     {
       "name": "HorizontalOrientable",
       "properties": { "dropBlockFace": "east" }
-    }
+    },
+    { "name": "Unstable", "properties": { "attachedToFaces": ["up"] } }
   ],
-  "entityBehaviors": [{ "name": "Animatable" }],
   "variantgroups": [
     { "code": "side", "loadFromProperties": "abstract/horizontalorientation" }
   ],
