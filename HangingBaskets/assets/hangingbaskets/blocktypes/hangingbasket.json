@@ -67,9 +67,14 @@
 
   "_comment": "Must declare textures so they get added to the block texture atlas",
   "textures": {
-    "reed-sidesWE": { "base": "game:block/reed/basket/normal-westeast" },
-    "reed-sidesSN": { "base": "game:block/reed/basket/normal-northsouth" },
-    "reed-lid": { "base": "game:block/reed/basket/normal-lid" }
+    "reed-normal-westeast": {
+      "base": "game:block/reed/basket/normal-westeast"
+    },
+    "reed-normal-northsouth": {
+      "base": "game:block/reed/basket/normal-northsouth"
+    },
+    "reed-normal-lid": { "base": "game:block/reed/basket/normal-lid" },
+    "reed-rope": { "base": "game:item/resource/rope" }
   },
   "blockmaterial": "Wood",
   "replaceable": 900,
