@@ -1,0 +1,33 @@
+[
+  {
+    "ingredientPattern": "R,B",
+    "height": 2,
+    "width": 1,
+    "ingredients": {
+      "B": { "type": "block", "code": "game:stationarybasket-*" },
+      "R": { "type": "item", "code": "game:rope" }
+    },
+    "output": {
+      "type": "block",
+      "code": "hangingbasket-east",
+      "attributes": { "type": "reed" }
+    }
+  },
+  {
+    "ingredientPattern": "B",
+    "height": 1,
+    "width": 1,
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "hangingbasket-*",
+        "returnedStack": { "type": "item", "code": "game:rope" }
+      }
+    },
+    "output": {
+      "type": "block",
+      "code": "game:stationarybasket-east",
+      "attributes": { "type": "reed" }
+    }
+  }
+]

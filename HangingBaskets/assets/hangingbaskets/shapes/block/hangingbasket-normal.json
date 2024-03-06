@@ -6,7 +6,10 @@
   "textureWidth": 16,
   "textureHeight": 16,
   "textureSizes": {},
-  "textures": {},
+  "textures": {
+    "normal-westeast": "game:block/reed/basket/normal-westeast",
+    "rope": "game:item/resource/rope"
+  },
   "elements": [
     {
       "name": "Cube3",
@@ -165,16 +168,6 @@
         "up": { "texture": "#normal-westeast", "uv": [3.5, 2.0, 10.5, 9.0] },
         "down": { "texture": "#normal-westeast", "uv": [3.5, 2.5, 10.5, 9.5] }
       }
-    }
-  ],
-  "animations": [
-    {
-      "name": "lidopen",
-      "code": "lidopen",
-      "quantityframes": 30,
-      "onActivityStopped": "Rewind",
-      "onAnimationEnd": "Hold",
-      "keyframes": []
     }
   ]
 }
