@@ -38,6 +38,7 @@
     },
     { "name": "Unstable", "properties": { "attachedToFaces": ["up"] } }
   ],
+  "entityBehaviors": [{ "name": "Animatable" }],
   "variantgroups": [
     { "code": "side", "loadFromProperties": "abstract/horizontalorientation" }
   ],
@@ -117,7 +118,6 @@
   },
   "materialDensity": 600,
   "guiTransform": {
-    "origin": { "x": 0.5, "y": 0.3, "z": 0.5 },
     "scale": 1.3
   },
   "groundTransform": {
