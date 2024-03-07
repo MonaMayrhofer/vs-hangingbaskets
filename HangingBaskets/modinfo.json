@@ -3,8 +3,8 @@
   "modid": "hangingbaskets",
   "name": "Hanging Baskets",
   "authors": ["Nionidh"],
-  "description": "A simple hanging basket, to store your stuff and decorate your base.",
-  "version": "1.0.0",
+  "description": "Danglin' Baskets, Danglin' Flowerpots!",
+  "version": "1.1.0",
   "dependencies": {
     "game": ""
   }
