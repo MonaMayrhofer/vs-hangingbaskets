@@ -1,0 +1,34 @@
+[
+  {
+    "ingredientPattern": "R,P",
+    "height": 2,
+    "width": 1,
+    "ingredients": {
+      "P": { "type": "block", "code": "game:flowerpot-*", "name": "kind" },
+      "R": { "type": "item", "code": "game:rope" }
+    },
+    "output": {
+      "type": "block",
+      "code": "hangingflowerpot-{kind}"
+    },
+    "copyAttributesFrom": "P"
+  },
+  {
+    "ingredientPattern": "P",
+    "height": 1,
+    "width": 1,
+    "ingredients": {
+      "P": {
+        "type": "block",
+        "code": "hangingflowerpot-*",
+        "name": "kind",
+        "returnedStack": { "type": "item", "code": "game:rope" }
+      }
+    },
+    "output": {
+      "type": "block",
+      "code": "game:flowerpot-{kind}"
+    },
+    "copyAttributesFrom": "P"
+  }
+]
