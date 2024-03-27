@@ -25,7 +25,61 @@
         "--addModPath",
         "${workspaceFolder}/HangingBaskets/bin/Debug/Mods",
         "--dataPath",
-        "${workspaceFolder}/.vintagestory"
+        "${workspaceFolder}/.vintagestory/default"
+      ],
+      "console": "externalTerminal",
+      "stopAtEntry": false,
+      "justMyCode": false
+    },
+    {
+      "name": "Launch Client (VS 1.18) (Debug)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${env:VINTAGE_STORY_18}/Vintagestory.exe",
+      "linux": {
+        "program": "${env:VINTAGE_STORY_18}/Vintagestory.dll"
+        // "program": "/nix/store/2wvj5m281kzhs51avpsysgc08xxz47k2-vintagestory-1.18.15/bin/vintagestory"
+      },
+      "osx": {
+        "program": "${env:VINTAGE_STORY_18}/Vintagestory"
+      },
+      "preLaunchTask": "build",
+      "args": [
+        // "--playStyle" , "preset-surviveandbuild",
+        "--openWorld",
+        "modding test world",
+        "--tracelog",
+        "--addModPath",
+        "${workspaceFolder}/HangingBaskets/bin/Debug/Mods",
+        "--dataPath",
+        "${workspaceFolder}/.vintagestory/vs18"
+      ],
+      "console": "externalTerminal",
+      "stopAtEntry": false,
+      "justMyCode": false
+    },
+    {
+      "name": "Launch Client (VS 1.19) (Debug)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${env:VINTAGE_STORY_19}/Vintagestory.exe",
+      "linux": {
+        "program": "${env:VINTAGE_STORY_19}/Vintagestory.dll"
+        // "program": "/nix/store/2wvj5m281kzhs51avpsysgc08xxz47k2-vintagestory-1.18.15/bin/vintagestory"
+      },
+      "osx": {
+        "program": "${env:VINTAGE_STORY_19}/Vintagestory"
+      },
+      "preLaunchTask": "build",
+      "args": [
+        // "--playStyle" , "preset-surviveandbuild",
+        "--openWorld",
+        "modding test world",
+        "--tracelog",
+        "--addModPath",
+        "${workspaceFolder}/HangingBaskets/bin/Debug/Mods",
+        "--dataPath",
+        "${workspaceFolder}/.vintagestory/vs19"
       ],
       "console": "externalTerminal",
       "stopAtEntry": false,
